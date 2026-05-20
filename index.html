@@ -159,7 +159,7 @@ h1 span { color: var(--j1); }
 <!-- ══════════ ROADMAP PANEL ══════════ -->
 <div id="tab-roadmap" class="panel active">
 
-<div class="you-are-here">⊙ Estás aquí — J2 completo ✓ · J3 construyéndose ahora</div>
+<div class="you-are-here">⊙ Estás aquí — J1/J2/J3/J4 completos en Draft · pendiente: contenido y templates</div>
 
 <div class="phase-divider"><div class="phase-divider-line"></div><div class="phase-divider-label">Fase 0 — Fundamentos</div><div class="phase-divider-line"></div></div>
 
@@ -212,29 +212,33 @@ h1 span { color: var(--j1); }
 </div>
 
 <div class="rm-phase">
-  <div class="rm-head"><span class="rm-dot" style="background:var(--amber)"></span><span class="rm-title">J3 · Fidelización | Tx2 → Tx4 (ID: 13)</span><span class="badge b-active">Recreando simplificado — ~17 nodos</span></div>
+  <div class="rm-head"><span class="rm-dot" style="background:var(--green)"></span><span class="rm-title">J3 · Fidelización | Tx2 → Tx4 (ID: 14 · v2)</span><span class="badge b-done">Completo — 13 nodos ✓</span></div>
   <div class="rm-body">
     <ul class="task-list">
-      <li class="task"><span class="task-icon">⟳</span><span class="task-text"><strong>Decisión:</strong> journey de 100+ nodos descartado · recreando estructura lineal sin ramificación por canal <span class="note">Nueva sesión</span></span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Estructura: Trigger → Wait 3d → Check Día3 → WA → Wait 12d → Check Día15 → WA → Wait 15d → Check Día30 → WA → Wait 15d → Check Día45</span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Insider elige canal automáticamente — sin Check Reachability manual</span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Conectar diseños email cuando estén listos <span class="dep">GYM-1927, 1928, 1929 · S20</span></span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Trigger + Wait 3d + Check Día3 → WA Día3 Recomendacion</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Wait 12d + Check Día15 → WA Día15 Incentivo</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Wait 15d + Check Día30 → WA Día30 Urgencia</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Wait 15d + Check Día45 → salida positiva (Tx4) / negativa (pasa a J4)</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text">Journey 13 original deprecated (100+ nodos) · eliminar manualmente en Insider</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text">Conectar diseños email <span class="dep">GYM-1927, 1928, 1929 · S20</span></span></li>
     </ul>
-    <div class="bar"><div class="bar-fill" style="width:10%;background:var(--amber)"></div></div>
-    <div class="bar-label">Reiniciando · estructura simplificada en construcción</div>
+    <div class="bar"><div class="bar-fill" style="width:70%;background:var(--green)"></div></div>
+    <div class="bar-label">4 / 6 · pendiente: eliminar J13 + contenido</div>
   </div>
 </div>
 
 <div class="rm-phase">
-  <div class="rm-head"><span class="rm-dot" style="background:var(--amber)"></span><span class="rm-title">J4 · Retención | Riesgo de fuga</span><span class="badge b-active">En cola — después de J3 · ~11 nodos</span></div>
+  <div class="rm-head"><span class="rm-dot" style="background:var(--green)"></span><span class="rm-title">J4 · Retención | Riesgo de fuga (ID: 15)</span><span class="badge b-done">Completo — 8 nodos ✓</span></div>
   <div class="rm-body">
     <ul class="task-list">
-      <li class="task"><span class="task-icon">⟳</span><span class="task-text"><strong>GYM-1938</strong> · Estructura lineal simplificada · Trigger On Past Behavior Daily <span class="note">Esta sesión</span></span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">3 pulsos WA: Reconocimiento (Día0) → OfertaPersonalizada (Día4) → OfertaAgresiva (Día8)</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Trigger On Past Behavior Daily · Purchase=0/45d + Purchase>0/90d + Purchase>1/365d</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">WA Día0 Reconocimiento → Wait 4d → Check Día4 → WA OfertaPersonalizada</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Wait 4d → Check Día8 → WA OfertaAgresiva · salidas en Not Matching</span></li>
       <li class="task"><span class="task-icon">○</span><span class="task-text">Conectar diseños email <span class="dep">GYM-1930, 1931, 1932 · S20</span></span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text">Mejorar segmentación cuando rfm_segment esté disponible <span class="dep">GYM-1934</span></span></li>
     </ul>
-    <div class="bar"><div class="bar-fill" style="width:5%;background:var(--amber)"></div></div>
-    <div class="bar-label">Spec listo · construcción pendiente</div>
+    <div class="bar"><div class="bar-fill" style="width:60%;background:var(--green)"></div></div>
+    <div class="bar-label">3 / 5 · pendiente: contenido + rfm_segment</div>
   </div>
 </div>
 
@@ -590,7 +594,7 @@ h1 span { color: var(--j1); }
 
 </div><!-- end journeys panel -->
 
-<div class="updated">Última actualización: 20 May 2026 · J1 completo · J2/J3/J4 construyéndose en Insider · 20 tarjetas Jira en GYM-1678 · Actualizado por Claude</div>
+<div class="updated">Última actualización: 20 May 2026 · J1✓ J2✓ J3✓ J4✓ todos en Draft · 20 tarjetas Jira en GYM-1678 · Actualizado por Claude</div>
 
 </div><!-- wrap -->
 
