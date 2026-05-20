@@ -159,7 +159,7 @@ h1 span { color: var(--j1); }
 <!-- ══════════ ROADMAP PANEL ══════════ -->
 <div id="tab-roadmap" class="panel active">
 
-<div class="you-are-here">⊙ Estás aquí — J1/J2/J3/J4 completos en Draft · pendiente: contenido y templates</div>
+<div class="you-are-here">⊙ Estás aquí — 6/6 journeys en Draft ✓ · siguiente: templates WA aprobadas por Meta</div>
 
 <div class="phase-divider"><div class="phase-divider-line"></div><div class="phase-divider-label">Fase 0 — Fundamentos</div><div class="phase-divider-line"></div></div>
 
@@ -243,28 +243,32 @@ h1 span { color: var(--j1); }
 </div>
 
 <div class="rm-phase">
-  <div class="rm-head"><span class="rm-dot" style="background:var(--dim)"></span><span class="rm-title">J5 · Reactivación | Cliente fugado</span><span class="badge b-todo">Pendiente</span></div>
+  <div class="rm-head"><span class="rm-dot" style="background:var(--green)"></span><span class="rm-title">J5 · Reactivación | Cliente fugado (ID: 16)</span><span class="badge b-done">Completo — 13 nodos ✓</span></div>
   <div class="rm-body">
     <ul class="task-list">
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Trigger: On Past Behavior · daily · 90–365d sin compra</span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">3 pulsos en 21 días · luego tag "dormido"</span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Filtrar solo Campeón y Leal fugados <span class="dep">Dep: rfm_segment</span></span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Trigger On Past Behavior Daily · Purchase=0/90d + Purchase>0/180d + Purchase>1/180d</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">WA Día0 TeExtrañamos → Wait 7d → Check → WA Día7 OfertaPersonalizada</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Wait 7d → Check → WA Día14 UltimaBala → Wait 7d → Check → dormido</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text">Conectar templates WA <span class="dep">GYM-1923 · S19</span></span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text">Mejorar segmentación con rfm_segment Campeón/Leal <span class="dep">GYM-1934</span></span></li>
     </ul>
-    <div class="bar"><div class="bar-fill" style="width:0%;background:var(--dim)"></div></div>
-    <div class="bar-label">0 / 3 tareas</div>
+    <div class="bar"><div class="bar-fill" style="width:60%;background:var(--green)"></div></div>
+    <div class="bar-label">3 / 5 · pendiente: contenido + rfm_segment</div>
   </div>
 </div>
 
 <div class="rm-phase">
-  <div class="rm-head"><span class="rm-dot" style="background:var(--dim)"></span><span class="rm-title">J6 · Servicio | NPS post entrega</span><span class="badge b-todo">Pendiente</span></div>
+  <div class="rm-head"><span class="rm-dot" style="background:var(--green)"></span><span class="rm-title">J6 · Servicio | NPS post entrega (ID: 17)</span><span class="badge b-done">Completo — 7 nodos ✓</span></div>
   <div class="rm-body">
     <ul class="task-list">
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Trigger: Purchase · todos los compradores · +24h</span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Botones interactivos WA 1 clic <span class="dep">Dep: template Meta aprobada</span></span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Lógica NPS ≤ 6 → atributo nps_detractor <span class="dep">Dep: atributo custom</span></span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Trigger On Event → Purchase · todos los compradores</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Wait 1 Day → WA NPS PostEntrega → Wait 2 Days → Check Conditions</span></li>
+      <li class="task"><span class="task-icon">✓</span><span class="task-text">Check placeholder activo · ramas abiertas neutro y respondió</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text">Reemplazar Check placeholder con atributo nps_detractor real <span class="dep">GYM-1933</span></span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text">Conectar template WA NPS con botones <span class="dep">GYM-1920 · S18</span></span></li>
     </ul>
-    <div class="bar"><div class="bar-fill" style="width:0%;background:var(--dim)"></div></div>
-    <div class="bar-label">0 / 3 tareas</div>
+    <div class="bar"><div class="bar-fill" style="width:60%;background:var(--green)"></div></div>
+    <div class="bar-label">3 / 5 · pendiente: nps_detractor + template WA</div>
   </div>
 </div>
 
@@ -594,7 +598,7 @@ h1 span { color: var(--j1); }
 
 </div><!-- end journeys panel -->
 
-<div class="updated">Última actualización: 20 May 2026 · J1✓ J2✓ J3✓ J4✓ todos en Draft · 20 tarjetas Jira en GYM-1678 · Actualizado por Claude</div>
+<div class="updated">Última actualización: 20 May 2026 · J1✓ J2✓ J3✓ J4✓ J5✓ J6✓ — 6/6 journeys en Draft · 20 tarjetas Jira · Actualizado por Claude</div>
 
 </div><!-- wrap -->
 
