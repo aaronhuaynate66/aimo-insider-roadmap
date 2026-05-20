@@ -264,35 +264,43 @@ h1 span { color: var(--j1); }
 <div class="phase-divider"><div class="phase-divider-line"></div><div class="phase-divider-label">Fase 2 — Datos y atributos</div><div class="phase-divider-line"></div></div>
 
 <div class="rm-phase">
-  <div class="rm-head"><span class="rm-dot" style="background:var(--red)"></span><span class="rm-title">Sincronización RFM → Insider</span><span class="badge b-block">Bloqueante</span></div>
+  <div class="rm-head"><span class="rm-dot" style="background:var(--red)"></span><span class="rm-title">Sincronización RFM → Insider</span><span class="badge b-block">Bloqueante · GYM-1934</span></div>
   <div class="rm-body">
     <ul class="task-list">
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Job diario: enviar <strong>transaction_count</strong> a Insider vía API upsert</span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Job diario: enviar <strong>lifecycle_stage</strong> desde motor RFM</span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Atributo custom <strong>nps_detractor</strong> creado en Insider</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1934</strong> · Job diario: enviar <strong>rfm_segment</strong> y <strong>lifecycle_stage</strong> a Insider vía API upsert</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1933</strong> · Atributo custom <strong>nps_detractor</strong> creado en Insider + lógica de exclusión <span class="dep">Bloquea J2 y J6</span></span></li>
       <li class="task"><span class="task-icon">○</span><span class="task-text">Activar modelo predictivo <strong>cls</strong> con CS de Insider</span></li>
       <li class="task"><span class="task-icon">○</span><span class="task-text">Subir base de Call Center (~44k clientes) con datos de contacto</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1935</strong> · Plan QA journeys J1–J6 antes de publicar <span class="dep">Prerequisito para producción</span></span></li>
     </ul>
     <div class="bar"><div class="bar-fill" style="width:0%;background:var(--red)"></div></div>
-    <div class="bar-label">0 / 5 tareas · responsable: equipo de data</div>
+    <div class="bar-label">0 / 5 tareas · responsable: Aaron</div>
   </div>
 </div>
 
 <div class="phase-divider"><div class="phase-divider-line"></div><div class="phase-divider-label">Fase 3 — Contenido y canales</div><div class="phase-divider-line"></div></div>
 
 <div class="rm-phase">
-  <div class="rm-head"><span class="rm-dot" style="background:var(--amber)"></span><span class="rm-title">Templates WhatsApp y Email</span><span class="badge b-active">En curso · 5 tarjetas en Jira</span></div>
+  <div class="rm-head"><span class="rm-dot" style="background:var(--amber)"></span><span class="rm-title">Templates WhatsApp · Diseños Email · QA</span><span class="badge b-active">En curso · 14 tarjetas en Jira</span></div>
   <div class="rm-body">
     <ul class="task-list">
-      <li class="task"><span class="task-icon">⟳</span><span class="task-text"><strong>GYM-1919</strong> · `aimo_onboarding_confirmacion` — UTILITY · equipo WA activo <span class="note">En progreso</span></span></li>
-      <li class="task"><span class="task-icon">⟳</span><span class="task-text"><strong>GYM-1920</strong> · `aimo_onboarding_nps` — UTILITY · botones interactivos <span class="note">En progreso</span></span></li>
-      <li class="task"><span class="task-icon">⟳</span><span class="task-text"><strong>GYM-1921</strong> · `aimo_onboarding_incentivo` — MARKETING · J1 y J2 <span class="note">En progreso</span></span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1922</strong> · `aimo_retencion_riesgo` — MARKETING · J4</span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1923</strong> · `aimo_reactivacion_winback` — MARKETING · J5</span></li>
-      <li class="task"><span class="task-icon">○</span><span class="task-text">Templates Email — 3 base: bienvenida, recordatorio, urgencia</span></li>
+      <li class="task"><span class="task-icon">⟳</span><span class="task-text"><strong>GYM-1919</strong> · WA `aimo_onboarding_confirmacion` — UTILITY <span class="note">En progreso</span></span></li>
+      <li class="task"><span class="task-icon">⟳</span><span class="task-text"><strong>GYM-1920</strong> · WA `aimo_onboarding_nps` — UTILITY · botones <span class="note">En progreso</span></span></li>
+      <li class="task"><span class="task-icon">⟳</span><span class="task-text"><strong>GYM-1921</strong> · WA `aimo_onboarding_incentivo` — MARKETING <span class="note">En progreso</span></span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1922</strong> · WA `aimo_retencion_riesgo` — MARKETING · J4</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1923</strong> · WA `aimo_reactivacion_winback` — MARKETING · J5</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1924</strong> · Email Recomendación menú J2 Día 5</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1925</strong> · Email Incentivo urgente J2 Día 7</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1926</strong> · Email Último intento J2 Día 13</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1927</strong> · Email Cross-sell J3 Día 3</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1928</strong> · Email Progresión J3 Día 15</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1929</strong> · Email Urgencia final J3 Día 30</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1930</strong> · Email Reconocimiento J4 Día 0</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1931</strong> · Email Oferta personalizada J4 Día 4</span></li>
+      <li class="task"><span class="task-icon">○</span><span class="task-text"><strong>GYM-1932</strong> · Email Oferta agresiva J4 Día 8</span></li>
     </ul>
-    <div class="bar"><div class="bar-fill" style="width:20%;background:var(--amber)"></div></div>
-    <div class="bar-label">5 tarjetas creadas en GYM-1678 · aprobación Meta pendiente</div>
+    <div class="bar"><div class="bar-fill" style="width:12%;background:var(--amber)"></div></div>
+    <div class="bar-label">3 / 14 en progreso · responsable: Aeylin + equipo</div>
   </div>
 </div>
 
@@ -579,7 +587,7 @@ h1 span { color: var(--j1); }
 
 </div><!-- end journeys panel -->
 
-<div class="updated">Última actualización: 20 May 2026 · J1 cerrado · 5 tarjetas Jira creadas en GYM-1678 · Actualizado por Claude</div>
+<div class="updated">Última actualización: 20 May 2026 · J1 cerrado · 17 tarjetas Jira en GYM-1678 · J2-J4 en construcción · Actualizado por Claude</div>
 
 </div><!-- wrap -->
 
